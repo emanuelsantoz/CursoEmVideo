@@ -1,8 +1,9 @@
 # Curso em Video HTML & CSS Repositório
 
-Aplicativo para criar várias listas para serem usadas simultaneamente e sincronizadas na nuvem após os dados serem salvos localmente (**Offline-first**).
+Esse repositório será responsavel por guardar todos os dados, codigos, PFDs e projetos, desenvolvidos em durante o Curso em Video, Todos os cretidos são do canal e criados do conteudo #curso em video "GustavoGuanabara"
 
-![image](app.png)
+![image](https://github.com/user-attachments/assets/6861df22-4dab-4d6c-b758-060b2e6b39ef)
+
 
 # 1. Modulos
 
