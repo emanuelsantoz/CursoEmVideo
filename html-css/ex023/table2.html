@@ -9,9 +9,16 @@
             border: 1px solid rgb(255, 255, 255);
             width: 100%;
             border-collapse: collapse;
+            position: relative;
         }
 
         thead, tfoot{
+            background-color: gainsboro;
+        }
+        
+        thead > tr > th{
+            position: sticky;
+            top: 0;
             background-color: gainsboro;
         }
 
@@ -26,6 +33,11 @@
             text-align: center;
         }
 
+        tbody > tr:nth-child(2n){
+            background-color: cadetblue;
+            font-weight: bold;
+        }
+
         td.num{
             text-align: right;
         }
@@ -34,6 +46,7 @@
     </style>
 </head>
 <body>
+    <h1>Uso de tabelas grandes</h1>
     <table>
         <thead>
             <th scope="col">Posição</th>
