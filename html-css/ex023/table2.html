@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Big Table</title>
+    <style>
+        table{
+            border: 1px solid rgb(255, 255, 255);
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        thead, tfoot{
+            background-color: gainsboro;
+        }
+
+        th{
+            padding: 1rem;
+            text-align: center;
+            
+        }
+
+        tr, td{
+            border: 1px solid rgb(255, 255, 255);
+            text-align: center;
+        }
+
+        td.num{
+            text-align: right;
+        }
+
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <th scope="col">Posição</th>
+            <th scope="col">Unidade Federaiva</th>
+            <th scope="col">População</th>
+            <th scope="col">% da pop.total</th>
+            <th scope="col">Pais comparável</th>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Amazonas</td>
+                <td class="num">559 167,889</td>
+                <td>18,321</td>
+                <td>Mon</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Pará</td>
+                <td class="num">1 245 870,798</td>
+                <td>14%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mato Grosso</td>
+                <td class="num">903 207,019</td>
+                <td>6,60%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Minas Gerais</td>
+                <td class="num">586 521,123</td>
+                <td>6,60%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Bahia</td>
+                <td class="num">586 521,123</td>
+                <td>6,40%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">357 145,534</td>
+                <td>4,0%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Goiás</td>
+                <td class="num">340 203,329</td>
+                <td>4,50%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>Maranhão</td>
+                <td class="num">329 642,182</td>
+                <td>3,00%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>Rio Grande do Sul</td>
+                <td class="num">281 707,156</td>
+                <td>3,31%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>Tocantins</td>
+                <td class="num">277 466,763</td>
+                <td>3,20%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>Piauí</td>
+                <td class="num">251 756,515</td>
+                <td>3,20%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>São Paulo</td>
+                <td class="num">248 219,481</td>
+                <td>2,70%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>Rondônia</td>
+                <td class="num">237 765,24</td>
+                <td>2,40%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>Roraima</td>
+                <td class="num">223 644,527</td>
+                <td>2,20%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>Paraná</td>
+                <td class="num">199 298,979</td>
+                <td>1,6%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>Acre</td>
+                <td class="num">164 123,964</td>
+                <td>1,9%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>Ceará</td>
+                <td class="num">148 894,441</td>
+                <td>1,6%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>Amapá</td>
+                <td class="num">142 470,762</td>
+                <td>1,6%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>Pernabuco</td>
+                <td class="num">98 067,881</td>
+                <td>1,16%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>Santa Catarina</td>
+                <td class="num">199 298,979</td>
+                <td>1,15%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>Paraíba</td>
+                <td class="num">95 730,684</td>
+                <td>1,1%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>Rio Grande do Norte</td>
+                <td class="num">52 809,602</td>
+                <td>0,78%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>Espírito Santo</td>
+                <td class="num">46 074,447</td>
+                <td>0,76%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>Rio de Janeiro</td>
+                <td class="num">43 750,427</td>
+                <td>0,66%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>Alagoas</td>
+                <td class="num">27 848,140</td>
+                <td>0,39%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>Sergipe</td>
+                <td class="num">21 925,424</td>
+                <td>0,26%</td>
+                <td>Brasil</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>Distrito Federal</td>
+                <td class="num">5 760,783</td>
+                <td>00,6%</td>
+                <td>Brasil</td>
+            </tr>
+        </tbody>
+
+        <tfoot>
+            <th scope="row">Total Habitatantes</th>
+            <td><strong>200.100.022</strong></td>
+        </tfoot>
+    </table>
+</body>
+</html>
