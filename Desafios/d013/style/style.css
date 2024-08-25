@@ -60,3 +60,10 @@ a{
     width: 60px;
     border-radius: 50px;
 }
+
+.links > img:hover{
+    border: 2px solid white;
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.527);
+    transition: transform .5s;
+}
