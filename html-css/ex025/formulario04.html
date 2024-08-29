@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Melhorando Formulário</h1>
+
+    <form action="cadastro.php">
+        <fieldset>
+            <p>
+                <label for="inome">Nome do usuário:</label>
+                <input type="text" name="nome" id="inome" required maxlength="30" minlength="2"
+                    placeholder="Nome do usuario" autocomplete="username">
+            </p>
+
+            <p>
+                <label for="imail">Email:</label>
+                <input type="email" name="mail" id="imail" required placeholder="xx@xxx.com" minlength="5"
+                    maxlength="60">
+            </p>
+            <p>
+                <label for="itelefone">Telefone:</label>
+                <input type="tel" name="telefone" id="itelefone" required
+                autocomplete="tel-area-code" placeholder="(xx) xxxx-xxxx" 
+                pattern="^\(\d{2}\)\d{4,5}-\d{4}$">
+            </p>
+        </fieldset>
+
+        <input type="reset" value="Apagar">
+        <input type="submit" value="Enviar">
+    </form>
+</body>
+
+</html>
