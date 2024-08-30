@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Aniversario</h1>
+
+    <form action="cadastro.php">
+        <p>
+            <label for="iano">Número 1:</label>
+            <input type="number" name="ano" id="iano" min="1900" max="2400" required oninput="calculateAno()">
+        </p>
+
+        <p>
+            <label for="iidade">Sua idade é:</label>
+            <output name="idade" id="iidade"></output>
+        </p>
+
+        <p>
+            <input type="reset" value="Apagar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+
+    <script>
+        function calculateAno() {
+            let atualData = new Date().getFullYear();
+            iidade.innerHTML = Number(atualData) - Number(iano.value)
+        }
+    </script>
+</body>
+
+</html>

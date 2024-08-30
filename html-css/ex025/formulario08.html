@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+
+<body>
+    <h1>Color | Range e File</h1>
+
+    <form action="cadastro.php">
+        <p>
+            <label for="in1">Carregando...</label>
+            <input type="range" name="ran" id="ran1" min="0" max="5" required
+                oninput="valueTotal.innerHTML = Number(ran1.value)">
+                <output id="valueTotal">0</output>
+        </p>
+        
+
+        <p>
+            <input type="reset" value="Apagar">
+            <input type="submit" value="Enviar">
+        </p>
+    </form>
+</body>
+
+</html>
