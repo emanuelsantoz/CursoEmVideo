@@ -1,0 +1,49 @@
+@charset "UTF-8";
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header{
+    background-color: gray;
+    color: black;
+    margin-bottom: 2rem;
+}
+
+header > h1{
+    text-align: center;
+}
+
+ul{
+    background-color: rgb(58, 58, 58);
+}
+
+li {
+    text-align: start;
+    display: inline-block;
+    background-color: rgb(19, 19, 19);
+    padding: 5px 3px;
+    border-radius: 5px;
+    color: white;
+}
+
+main{
+    width: 600px;
+    margin: auto;
+}
+
+article > h2{
+    font-size: 2rem;
+    text-align: center;
+}
+
+article > p{
+    font-size: 1.2rem;
+    margin: 1rem .5rem;
+    text-align: justify;
+}
+
