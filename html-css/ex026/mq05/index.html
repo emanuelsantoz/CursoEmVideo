@@ -6,22 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu Respansivo</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/media-query.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
-<body>
-    <script>
-        var menuBurgue = window.document.getElementsByTagName('menu');
-        function actionMenu() {
-            if (menuBurgue[0].style.display == 'none') {
-                menuBurgue[0].style.display = 'block';
-            } else {
-                menuBurgue[0].style.display = 'none';
-            }
-
-        }
-    </script>
+<body onresize="mudouTamanho()">
     <header>
         <h1>Meu Site</h1>
         <span id="burgue" onclick="actionMenu()" class="material-symbols-outlined">
@@ -61,6 +51,28 @@
                 necessitatibus, qui molestiae aperiam?</p>
         </article>
     </main>
+
+    <script>
+        var menuBurgue = window.document.getElementsByTagName('menu');
+        function mudouTamanho() {
+            console.log('test')
+            if (window.innerWidth >= 768) {
+                menuBurgue[0].style.display = 'block'
+            } else {
+                menuBurgue[0].style.display = 'none'
+            }
+        }
+
+
+        function actionMenu() {
+            if (menuBurgue[0].style.display == 'none') {
+                menuBurgue[0].style.display = 'block';
+            } else {
+                menuBurgue[0].style.display = 'none';
+            }
+        }
+
+    </script>
 </body>
 
 </html>
