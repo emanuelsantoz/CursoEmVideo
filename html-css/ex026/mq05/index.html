@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Respansivo</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <script>
+        var menuBurgue = window.document.getElementsByTagName('menu');
+        function actionMenu() {
+            if (menuBurgue[0].style.display == 'none') {
+                menuBurgue[0].style.display = 'block';
+            } else {
+                menuBurgue[0].style.display = 'none';
+            }
+
+        }
+    </script>
+    <header>
+        <h1>Meu Site</h1>
+        <span id="burgue" onclick="actionMenu()" class="material-symbols-outlined">
+            menu
+        </span>
+        <menu>
+            <ul>
+                <li><a href=""><span class="material-symbols-outlined">
+                            home
+                        </span></a></li>
+                <li><a href="">opção 2</a></li>
+                <li><a href="">opção 3</a></li>
+                <li><a href="">opção 4</a></li>
+                <li><a href="">opção 5</a></li>
+            </ul>
+        </menu>
+    </header>
+
+    <main>
+        <article>
+            <h2>Testando Media Queries</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nemo neque, fugit quod quia
+                dignissimos harum, non possimus inventore reiciendis optio vitae? Ex sint possimus voluptates
+                necessitatibus, qui molestiae aperiam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia
+                hic maxime, numquam iste cupiditate excepturi consectetur aut! Natus in exercitationem nobis, iusto sint
+                ea vel deleniti, expedita sed totam autem!</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nemo neque, fugit quod quia
+                dignissimos harum, non possimus inventore reiciendis optio vitae? Ex sint possimus voluptates
+                necessitatibus, qui molestiae aperiam?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nemo neque, fugit quod quia
+                dignissimos harum, non possimus inventore reiciendis optio vitae? Ex sint possimus voluptates
+                necessitatibus, qui molestiae aperiam? Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Voluptatum voluptatem, soluta maxime voluptatibus provident architecto unde explicabo voluptas dolore
+                nobis harum nisi, vero earum ex neque ullam deleniti consectetur tempora?</p>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perspiciatis nemo neque, fugit quod quia
+                dignissimos harum, non possimus inventore reiciendis optio vitae? Ex sint possimus voluptates
+                necessitatibus, qui molestiae aperiam?</p>
+        </article>
+    </main>
+</body>
+
+</html>
